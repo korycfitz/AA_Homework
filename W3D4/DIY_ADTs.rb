@@ -82,7 +82,7 @@ class Map
     end
 
     def delete(key)
-        pair.select! { |subarr| subarr[0] != key }
+        @pair.select! { |subarr| subarr[0] != key }
         get(key)
     end
 
